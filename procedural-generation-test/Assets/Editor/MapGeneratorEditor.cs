@@ -10,13 +10,13 @@ public class MapGeneratorEditor : Editor {
 		MapGenerator mapGen = (MapGenerator)target;
 
 		if (DrawDefaultInspector ()) {
-			if (mapGen.autoUpdateTerrainChunkTerrainChunkTerrainChunkTerrainChunkTerrainChunkTerrainChunkTerrainChunkTerrainChunkTerrainChunk) {
-				mapGen.GenerateMap ();
+			if (mapGen.autoUpdate) {
+				mapGen.DrawMapInEditor ();
 			}
 		}
 
 		if (GUILayout.Button ("Generate")) {
-			mapGen.GenerateMap ();
+			mapGen.DrawMapInEditor ();
 		}
 	}
 }
